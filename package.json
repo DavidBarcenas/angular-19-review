@@ -15,9 +15,10 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "**/*": [
+    "!(*.ts)": "prettier --ignore-unknown --write",
+    "*.ts": [
       "eslint --fix",
-      "prettier --write --ignore-unknown"
+      "prettier --write"
     ]
   },
   "private": true,
