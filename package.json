@@ -11,6 +11,7 @@
     "test:coverage": "jest --coverage",
     "serve:ssr:ng-review": "node dist/ng-review/server/server.mjs",
     "lint": "ng lint",
+    "lint:fix": "ng lint --fix",
     "format": "prettier --write .",
     "prepare": "husky"
   },
